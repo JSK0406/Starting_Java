@@ -1,0 +1,106 @@
+package edu.oopfirst;
+
+import java.util.Scanner;
+
+class Person {
+	private final int IQ = 140;
+	private String name;
+	private int age;
+	
+	public Person() {
+		System.out.println("난 Person 기본 생성자");
+	}
+	
+	public Person(String pn, int pa) {
+		System.out.println("난 매개변수 2개인 Person 생성자");
+		name = pn;
+		age = pa;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public void setName(String pn) {
+		name = pn;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void talk() {
+		System.out.println("talk()메서드이다.");
+		name = "아무개";
+	}
+				
+	public void talk(String shouting) {
+		System.out.println(shouting);
+	}
+	
+	public void talk(String shouting, int page) {
+		System.out.print(shouting);
+		System.out.print(page);
+	}
+	
+	public void talk(int page, String shouting) {
+		System.out.print(shouting);
+		System.out.print(page);
+	}
+	
+	public void breathe() {
+		age = 1;
+	}
+	
+}
+
+public class OopOne0130 {
+
+	public static void main(String[] args) {
+//		int val[] = new int[] {10, 20, 30};
+		int val[] = new int[3];
+		val[0] = 10; val[1] = 20; val[2] = 30;
+		
+		for (int i = 0; i <= 2; i++) {
+			System.out.println(val[i]);
+		}
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String myname = null;
+		int myage = 0;
+		
+		System.out.print("이름 입력하시오:");
+		myname = sc.nextLine();
+		System.out.print("나이를 입력하시오:");
+		myage = sc.nextInt();
+		
+		Person hyunbin = new Person(myname, myage);
+		System.out.println(hyunbin.getName());
+		System.out.println(hyunbin.getAge());
+		
+		Person hodong = new Person("호동", 45);
+		System.out.println(hodong.getName());
+		System.out.println(hodong.getAge());
+		
+		Person gildong = new Person();
+		gildong.setName("길동");
+		System.out.println(gildong.getName());
+		gildong.setAge(23);
+		System.out.println(gildong.getAge());
+		
+		System.out.println(hodong.getName());
+		System.out.println(hodong.getAge());
+		
+		gildong.talk();
+		gildong.talk("열공하자");
+		gildong.talk("길동", gildong.getAge());
+		gildong.talk(24, "난 길동");
+		
+	}
+
+}

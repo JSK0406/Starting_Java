@@ -1,0 +1,15 @@
+package edu.whileex;
+
+public class WhileEx0130 {
+
+	public static void main(String[] args) {
+
+		int i = 0;
+		while (i <= 7) {
+			System.out.println("i=%d\n", i);
+			i++;
+		}
+		
+	}
+
+}

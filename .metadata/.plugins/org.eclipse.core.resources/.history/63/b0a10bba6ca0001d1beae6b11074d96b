@@ -1,0 +1,19 @@
+package edu.homework;
+
+import java.util.Scanner;
+
+public class HomeWork0130 {
+
+	public static void main(String[] args) {
+
+// homework01
+		
+		Scanner sc = new Scanner(System.in);
+		int arr[] = new int[5];
+		
+		System.out.println(arr.length);
+		
+		
+	}
+
+}

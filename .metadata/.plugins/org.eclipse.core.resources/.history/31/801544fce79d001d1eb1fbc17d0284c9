@@ -1,0 +1,19 @@
+package edu.switchone;
+
+public class SwitchOne0127 {
+
+	public static void main(String[] args) {
+		int share = score / 10, score = 90;
+		
+		switch(share) {
+		case 10:
+			System.out.println("A");
+			break;
+		case 9:
+			System.out.println("A");
+			break;
+		}
+	
+	}
+
+}

@@ -1,0 +1,14 @@
+package edu.whileex;
+
+public class WhileEx0130 {
+
+	public static void main(String[] args) {
+
+		int i = 0;
+		while (1) {
+			System.out.printf("i=%d\n", i);
+		}
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package edu.forexone;
+
+public class ForExOne0127 {
+
+	public static void main(String[] args) {
+		int sum = 0, i;
+		for (i = 1; i <= 10; i++) {
+			sum += i;
+			if (i % 2 == 0)
+				System.out.printf("i=%d\t", i);
+		}
+		System.out.println(sum + " " + i);
+		System.out.println(func(10));
+	}
+	
+	public static int func(int num) {
+		int sum = 0;
+		for (int i = 1; i <= num; i++) {
+			sum += i;
+		}
+		return sum;
+	}
+}

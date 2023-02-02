@@ -1,0 +1,28 @@
+package edu.oopfirst;
+
+class Person {
+	String name = null;
+	int age = 0;
+	
+	void talk() {
+		System.out.println("A");
+	}
+																																																																																																			
+	void breathe() {
+		
+	}
+}
+
+public class OopOne0130 {
+
+	public static void main(String[] args) {
+		Person gildong = new Person();
+		gildong.name = "길동";
+		System.out.println(gildong.name);
+		gildong.age = 23;
+		System.out.println(gildong.age);
+		
+		
+	}
+
+}

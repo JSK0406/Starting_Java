@@ -1,0 +1,36 @@
+package edu.homework;
+
+import java.util.Scanner;
+
+public class HomeWork0130 {
+
+	public static void main(String[] args) {
+
+// homework01
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int[] nums = new int[6];
+		int cnt = 0;
+		
+		for (int i = 0; i < 6; i++) {
+			while (true) {
+				System.out.print("로또번호 입력 : ");
+				int tmp = sc.nextInt();
+				for (int j : nums) {
+					if (j == tmp) {
+						System.out.println("같은 번호가 있습니다!");
+						continue;
+					}
+				}
+				nums[i] = tmp;
+				break;
+			}
+			if (i == 5)
+				break;
+			}
+		System.out.printf("입력된 로또번호 : \t%d\\t%d\\t%d\\t%d\\t%d\\t%d", nums[0], nums[1], nums[2], nums[3], nums[4], nums[5]);
+		
+		}
+		
+}

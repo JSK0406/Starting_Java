@@ -1,0 +1,77 @@
+package edu.homework;
+
+public class HomeWork0127 {
+
+	public static void main(String[] args) {
+
+//		for (int val = 1; val <= 9; val++) {
+//			for (int dan = 2; dan <=5; dan++) {
+//				int res = val * dan;
+//				if (res <= 9) {
+//					System.out.printf("%d * %d = %d \t", dan, val, res);
+//				}
+//				else {
+//					System.out.printf("%d * %d = %d\t", dan, val, res);
+//				}
+//			}
+//			System.out.println();
+//		}
+//		
+//		System.out.println();
+//		
+//		for (int val = 1; val <= 9; val++) {
+//			for (int dan = 6; dan <=9; dan++) {
+//				int res = val * dan;
+//				if (res <= 9) {
+//					System.out.printf("%d * %d = %d \t", dan, val, res);
+//				}
+//				else {
+//					System.out.printf("%d * %d = %d\t", dan, val, res);
+//				}
+//			}
+//			System.out.println();
+		
+		
+		boolean Flag = true;
+		
+		while (Flag) {
+			int start = 2, end = 5;
+			for (int val = 1; val <= 9; val++) {
+				for (int dan = start; dan <=end; dan++) {
+					int res = val * dan;
+					if (res <= 9) {
+						System.out.printf("%d * %d = %d \t", dan, val, res);
+					}
+					else {
+						System.out.printf("%d * %d = %d\t", dan, val, res);
+					}
+				}
+				System.out.println();
+				if (dan == 5) {
+					start = 6, end = 9;
+				}
+				else {
+					Flag = False;
+				}
+		}
+//		for (int val = 1; val <= 9; val++) {{
+//			int start = 2, end = 5;
+//			for (int dan = start; dan <= end; dan++) {
+//				int res = val * dan;
+//				if (res <= 9) {
+//					System.out.printf("%d * %d = %d \t", dan, val, res);
+//				}
+//				else {
+//					System.out.printf("%d * %d = %d\t", dan, val, res);
+//				}
+//				
+//			}
+//			System.out.println();
+//			if (val == 9) {
+//				val = 1, start = 6, end = 9;
+//			}
+//			}
+		}
+	}
+
+}

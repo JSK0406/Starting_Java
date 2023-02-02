@@ -1,0 +1,39 @@
+package edu.homework;
+
+import java.util.Scanner;
+
+public class HomeWork0130 {
+
+	public static void main(String[] args) {
+
+// homework01
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int[] nums = new int[6];
+		int cnt = 0;
+		
+		while (true) {
+			for (int i = 0; i < 6; i++) {
+				while (true) {
+					int tmp = sc.nextInt();
+					for (int j : nums) {
+						if (j == tmp) {
+							System.out.println("같은 번호가 있습니다!");
+							continue;
+						}
+					}
+					else {
+						nums[i] = tmp;
+						break;
+					}
+				if (i == 5) {
+					break;
+				}}
+			}
+		}
+		
+		System.out.println(nums[5]);
+	}
+
+}

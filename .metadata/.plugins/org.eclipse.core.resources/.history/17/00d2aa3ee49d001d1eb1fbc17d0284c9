@@ -1,0 +1,17 @@
+package edu.staticex;
+
+public class StaticEx0127 {
+
+	public static void main(String[] args) {
+		int a = 3, b = 5;
+		System.out.println(sum(a,b));
+	}
+	
+	public static int sum(int pa, int pb) {
+		int total = pa + pb;
+		
+		return total;
+	}
+	
+	
+}

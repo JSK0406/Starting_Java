@@ -1,0 +1,16 @@
+package edu.gugudan;
+
+public class GuGUDan01217 {
+
+	public static void main(String[] args) {
+		int dan = 2, val = 1;
+		
+		for (val = 1; val <= 9; val++) {
+			System.out.printf("%d * %d = %d\n", dan, val, dan * val);
+			
+		}
+		System.out.println("\t\t aaaaaaaaaaa");
+		
+	}
+
+}

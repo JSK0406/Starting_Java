@@ -1,0 +1,32 @@
+package edu.homework;
+
+public class HomeWork0127 {
+
+	public static void main(String[] args) {
+
+		for (int val = 2; val <= 5; val++) {
+			for (int dan = 1; dan <=9; dan++) {
+				res = val * dan;
+				if (res <= 9) {
+					System.out.printf("dan * val = %d \t", res);
+				}
+				else {
+					System.out.printf("dan * val = %d\t", res);
+				}
+			}
+		}
+		
+//		System.out.println();
+//		
+//		for (int dan = 6; dan <= 9; dan++) {
+//			for (int val = 1; val <=9; val++) {
+//				System.out.println();
+//			}
+//		}
+		
+		
+		
+		
+	}
+
+}

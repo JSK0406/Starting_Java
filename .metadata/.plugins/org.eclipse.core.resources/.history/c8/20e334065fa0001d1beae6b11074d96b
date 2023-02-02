@@ -1,0 +1,39 @@
+package edu.oopfirst;
+
+class Person {
+	private String name;
+	private int age;
+	
+	public void setName(String pn) {
+		name = pn;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void talk() {
+		System.out.println("talk()메서드이다.");
+		name = "아무개";
+	}
+																																																																																																			
+	public void breathe() {
+		age = 1;
+	}
+	
+}
+
+public class OopOne0130 {
+
+	public static void main(String[] args) {
+		Person gildong = new Person();
+		gildong.setName("길동");
+		System.out.println(gildong.getName());
+//		gildong.age = 23;
+//		System.out.println(gildong.age);
+//		gildong.talk();
+		
+		
+	}
+
+}

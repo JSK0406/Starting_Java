@@ -1,0 +1,93 @@
+package edu.inheritance;
+
+class Person {
+	protected final int IQ = 140;
+	protected String name = null;
+	protected int age = 0;
+	
+	static char blood = 'A';
+	
+	public static void display() {
+		System.out.println("display method" + blood);
+	}
+	
+	public Person() {
+		System.out.println("난 Person 기본 생성자");
+	}
+	
+	public Person(String name, int age) {
+		System.out.println("난 매개변수 2개인 Person 생성자");
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public int getAge() {
+		return this.age;
+	}
+	
+	public void setName(String pn) {
+		name = pn;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void talk() {
+		System.out.println("talk()메서드이다.");
+		name = "아무개";
+	}
+				
+	public void talk(String shouting) {
+		System.out.println(shouting);
+	}
+	
+	public void talk(String shouting, int page) {
+		System.out.print(shouting);
+		System.out.print(page);
+	}
+	
+	public void talk(int page, String shouting) {
+		System.out.print(shouting);
+		System.out.print(page);
+	}
+	
+	public void breathe() {
+		age = 1;
+	}
+	
+}
+
+class Man extends Person {
+	
+	private int money;
+	private String job;
+	
+	public void show() {
+		System.out.println(name);
+		System.out.println(money + job);
+	}
+	
+	public void work() {
+		System.out.println("man이 일한다.");
+	}
+	
+}
+
+public class Inheritance0131 {
+
+	public static void main(String[] args) {
+
+	Person chulsu = new Person();
+	chulsu.name = "철수";
+	System.out.println(chulsu.name);
+		
+		
+		
+	}
+
+}

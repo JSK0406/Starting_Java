@@ -1,0 +1,12 @@
+package edu.forextwo;
+
+public class ForExTwo {
+
+	public static void main(String[] args) {
+		for( ; ; ) {
+			System.out.println("book");
+		}
+		
+	}
+	
+}

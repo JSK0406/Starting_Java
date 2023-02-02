@@ -1,0 +1,15 @@
+package edu.forexone;
+
+public class ForExOne0127 {
+
+	public static void main(String[] args) {
+		int sum = 0, i = 1;
+		for (i = 1; i <= 10; i++) {
+			sum += i;
+			if (i % 2 == 0)
+				System.out.printf("i=%d\t", i);
+		}
+		System.out.println(sum + " " + i);
+	}
+
+}

@@ -1,0 +1,71 @@
+package edu.homework;
+
+import java.util.Scanner;
+
+public class HomeWork0127 {
+
+	public static void main(String[] args) {
+
+// 1
+/*
+		for (int val = 1; val <= 9; val++) {
+			for (int dan = 2; dan <=5; dan++) {
+				int res = val * dan;
+				if (res <= 9) {
+					System.out.printf("%d * %d = %d \t", dan, val, res);
+				}
+				else {
+					System.out.printf("%d * %d = %d\t", dan, val, res);
+				}
+			}
+			System.out.println();
+		}
+		
+		System.out.println();
+		
+		for (int val = 1; val <= 9; val++) {
+			for (int dan = 6; dan <=9; dan++) {
+				int res = val * dan;
+				if (res <= 9) {
+					System.out.printf("%d * %d = %d \t", dan, val, res);
+				}
+				else {
+					System.out.printf("%d * %d = %d\t", dan, val, res);
+				}
+			}
+			System.out.println();
+		}*/
+		
+//2
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("소수 구하기 프로그램");
+		System.out.print("소수를 구할 정수 한개 입력:");
+		int num = sc.nextInt();
+		int sum = 0;
+		
+		for (int i = 2; i <= num; i++) {
+			if (i == 2) {
+				System.out.printf("%d은(는) 소수이다.\n", i);
+				sum += 1;
+				continue;
+			}
+			for (int div = 2; div < i; div++) {
+				if (i % div == 0) {
+					break;
+				}
+				else {
+					continue;
+				}
+				System.out.printf("%d은(는) 소수이다.\n", i);
+				sum += 1;
+				break;
+			}
+		}
+		
+		System.out.printf("1~%d 사이의 소수 개수=%d", num, sum);
+		
+		
+	}
+
+}
